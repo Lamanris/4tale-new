@@ -7,6 +7,7 @@
 
     .section-title {
         font-size: 40px;
+        margin-bottom: 50px;
     }
 
     .menu-item--panel {
@@ -74,6 +75,41 @@
 
     .footer-menu__item:not(:last-child) {
         margin-right: 40px;
+    }
+
+    .page-hero {
+        padding-top: 50px;
+    }
+    .page-hero__banner {
+        padding: 5px 60px;
+        margin-bottom: 40px;
+        font-size: 18px;
+    }
+    .page-hero__title {
+        font-size: 60px;
+    }
+
+    .page-quote {
+        padding: 60px 0 50px;
+    }
+    .page-quote__text {
+        font-size: 24px;
+        max-width: 800px;
+    }
+
+    .page-info {
+        padding: 60px 0;
+    }
+    .page-info-container {
+        max-width: 1000px;
+    }
+    .page-info__title {
+        font-size: 44px;
+        line-height: 44px;
+        margin-bottom: 30px;
+    }
+    .page-info__text {
+        font-size: 20px;
     }
 }
 
@@ -256,6 +292,10 @@
     .footer-menu__item {
         margin: 0!important;
     }
+
+    .page-quote__bg {
+        max-width: 30vw;
+    }
 }
 
 @media (max-width: 767px) {
@@ -344,6 +384,36 @@
     .newsletter-subtitle {
         font-size: 16px;
     }
+
+    .page-hero {
+        min-height: 500px;
+    }
+    .page-hero__banner {
+        padding: 5px 40px;
+        margin-bottom: 30px;
+        font-size: 16px;
+    }
+    .page-hero__title {
+        font-size: 38px;
+    }
+    .page-quote {
+        padding: 40px 0;
+    }
+    .page-quote__text {
+        font-size: 20px;
+        font-weight: 500;
+        padding: 0 10px;
+    }
+    .page-info {
+        padding: 50px 0;
+    }
+    .page-info__title {
+        font-size: 38px;
+        line-height: 38px;
+    }
+    .page-info__text {
+        font-size: 18px;
+    }
 }
 
 @media (max-width: 500px) {
@@ -371,4 +441,6 @@
     .socials-grid {
         grid-gap: 20px;
     }
+
+
 }
