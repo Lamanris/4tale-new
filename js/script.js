@@ -24,11 +24,11 @@ const heroSwiper = new Swiper('.hero-swiper', {
     effect: "fade",
     speed: 500,
     allowTouchMove: false,
-    // autoplay: {
-    //     delay: 3500,
-    //     disableOnInteraction: false,
-    //     pauseOnMouseEnter: true
-    // },
+    autoplay: {
+        delay: 3500,
+        disableOnInteraction: false,
+        pauseOnMouseEnter: true
+    },
 });
 
 // Nav Menu Dropdowns
@@ -48,3 +48,15 @@ $(document).on("click", function(e) {
         $('.menu-item--dropdown').removeClass('menu-item--dropdown--active')
     }
 });
+
+// Show Vacancy Apply Form
+$('.vacancy-btn-apply').click(function () {
+    $(this).addClass('vacancy-btn-apply--animated')
+    setTimeout(() => {
+        $(this).addClass('vacancy-btn-apply--hidden')
+        $('.apply').addClass('apply--active')
+        setTimeout(() => {
+            $('.apply').addClass('apply--animated')
+        },100)
+    },300)
+})

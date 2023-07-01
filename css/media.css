@@ -185,9 +185,35 @@
     .vacancy-btn-apply {
         margin-top: 50px;
     }
+
+    .apply-content {
+        max-width: 800px;
+        padding-bottom: 60px;
+    }
+    .apply-title {
+        font-size: 44px;
+        margin-bottom: 40px;
+    }
+    .apply-item {
+        padding: 12px 0;
+    }
+    .apply-item label {
+        font-size: 18px;
+    }
+    .apply-item input {
+        height: 44px;
+    }
+    .apply-text {
+        margin-top: 20px;
+        font-size: 18px;
+    }
 }
 
 @media (max-width: 992px) {
+    .section {
+        padding: 40px 0 60px;
+    }
+
     .header-menu--desktop {
         display: none;
     }
@@ -410,6 +436,16 @@
         font-size: 18px;
         margin-bottom: 20px;
     }
+
+    .apply--animated {
+        margin-top: -60px;
+    }
+    .apply-row {
+        gap: 40px;
+    }
+    .apply-text {
+        font-size: 16px;
+    }
 }
 
 @media (max-width: 767px) {
@@ -418,7 +454,6 @@
         width: 180px;
         height: 40px;
     }
-
     .section-title {
         font-size: 30px;
         margin-bottom: 40px;
@@ -591,13 +626,44 @@
     .page-hero--vacancy {
         min-height: 350px;
     }
+
+    .apply-row {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+    .apply-content {
+        max-width: 540px;
+    }
+    .apply-title {
+        font-size: 38px;
+        margin-bottom: 25px;
+    }
+    .apply-item {
+        padding: 10px 0;
+    }
+    .apply-item input {
+        font-size: 16px;
+        padding: 12px;
+        height: 40px;
+    }
+    .apply-item textarea {
+        font-size: 16px;
+        padding: 12px;
+    }
+    .apply-item label {
+        font-weight: 500;
+    }
+    .apply-text {
+        font-size: 12px;
+        margin-top: 5px;
+    }
+    .apply-btn {
+        margin-top: 25px;
+    }
+
 }
 
 @media (max-width: 500px) {
-    .section {
-        padding: 40px 0 60px;
-    }
-
     .header__wrapper-burger {
         padding: 80px 0 40px;
     }
@@ -625,5 +691,9 @@
     }
     .page-hero--vacancy .page-hero__subtitle {
         font-size: 18px;
+    }
+
+    .apply-file__item-title {
+        max-width: 200px;
     }
 }
