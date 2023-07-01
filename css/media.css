@@ -29,12 +29,16 @@
     }
 
     .hero {
-        padding-top: 50px;
+        margin-top: 50px;
         min-height: calc(100vh - 50px);
     }
     .hero-slider__slide {
         max-height: calc(100vh - 50px);
         min-height: calc(100vh - 50px);
+    }
+    .hero--game__text {
+        font-size: 24px;
+        max-width: 400px;
     }
 
     .games-grid {
@@ -206,6 +210,22 @@
     .apply-text {
         margin-top: 20px;
         font-size: 18px;
+    }
+
+    .game-top {
+        max-width: 1000px;
+    }
+    .game-title {
+        font-size: 50px;
+    }
+    .game-desc {
+        font-size: 22px;
+    }
+    .game-item__title {
+        font-size: 50px;
+    }
+    .game-item__text {
+        font-size: 22px;
     }
 }
 
@@ -494,6 +514,10 @@
     .hero-swiper-button-next {
         left: auto;
         right: 5px;
+    }
+    .hero--game__text {
+        font-size: 20px;
+        max-width: 280px;
     }
 
     .games-grid {
