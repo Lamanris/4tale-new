@@ -256,7 +256,7 @@
         justify-content: space-between;
         position: fixed;
         top: 0;
-        right: -100%;
+        left: 0;
         width: 100%;
         background: #1D1D1D;
         z-index: 5;
@@ -265,6 +265,7 @@
         overflow: auto;
         min-height: 100vh;
         max-height: 100vh;
+        transform: translate(100%, 0);
     }
     .header__wrapper-burger .header-menu {
         display: flex;
@@ -361,7 +362,7 @@
         bottom: 0;
     }
     body.burger .header__wrapper-burger {
-        right: 0;
+        transform: translate(0, 0);
     }
     body.burger .header__burger:before {
         transform: rotate(45deg);
@@ -502,6 +503,10 @@
     .game-row:nth-of-type(2n + 1) .game-item--text {
         padding-right: 0;
         padding-left: 40px;
+    }
+
+    .page-hero {
+        background-attachment: initial!important;
     }
 }
 
