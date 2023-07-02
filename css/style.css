@@ -219,7 +219,7 @@ pre {
     height: 170px;
     top: 65px;
     left: 65px;
-    border-color: transparent #ec1c24;
+    border-color: transparent var(--color-gold);
     -webkit-animation: spinner 3s cubic-bezier(.25, .46, .45, .94) 0s infinite;
     animation: spinner 3s cubic-bezier(.25, .46, .45, .94) 0s infinite;
 }
