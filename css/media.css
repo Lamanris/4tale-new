@@ -213,19 +213,29 @@
     }
 
     .game-top {
-        max-width: 1000px;
+        max-width: 800px;
+        margin: 0 auto 80px;
     }
     .game-title {
-        font-size: 50px;
+        font-size: 48px;
     }
     .game-desc {
-        font-size: 22px;
+        font-size: 20px;
+    }
+    .game-row {
+        max-width: 1200px;
+    }
+    .game-row:not(:last-of-type) {
+        margin-bottom: 80px;
     }
     .game-item__title {
-        font-size: 50px;
+        font-size: 48px;
     }
     .game-item__text {
-        font-size: 22px;
+        font-size: 20px;
+    }
+    .game-item__img {
+        height: 350px;
     }
 }
 
@@ -374,6 +384,9 @@
         max-height: 70vh;
         min-height: 70vh;
     }
+    .hero--game__text {
+        font-size: 20px;
+    }
 
     .games-grid {
         grid-template-columns: repeat(auto-fit, minmax(330px, max-content));
@@ -466,6 +479,30 @@
     .apply-text {
         font-size: 16px;
     }
+
+    .game {
+        padding: 60px 0;
+    }
+    .game-title {
+        font-size: 46px;
+    }
+    .game-desc {
+        font-size: 20px;
+    }
+    .game-item__title {
+        font-size: 32px;
+    }
+    .game-item__text {
+        font-size: 18px;
+        font-weight: 400;
+    }
+    .game-item--text {
+        padding-right: 40px;
+    }
+    .game-row:nth-of-type(2n + 1) .game-item--text {
+        padding-right: 0;
+        padding-left: 40px;
+    }
 }
 
 @media (max-width: 767px) {
@@ -516,8 +553,8 @@
         right: 5px;
     }
     .hero--game__text {
-        font-size: 20px;
-        max-width: 280px;
+        font-size: 16px;
+        max-width: 250px;
     }
 
     .games-grid {
@@ -685,6 +722,41 @@
         margin-top: 25px;
     }
 
+    .game {
+        padding: 40px 0 60px;
+    }
+    .game-top {
+        margin: 0 auto 60px;
+    }
+    .game-title {
+        font-size: 36px;
+    }
+    .game-desc {
+        font-size: 18px;
+    }
+    .game-row {
+        flex-direction: column!important;
+    }
+    .game-row:not(:last-of-type) {
+        margin-bottom: 40px;
+    }
+    .game-item {
+        width: 100%;
+    }
+    .game-item--text {
+        padding: 0!important;
+        margin-bottom: 20px;
+    }
+    .game-item__title {
+        font-size: 28px;
+    }
+    .game-item__text {
+        font-size: 16px;
+        font-weight: 400;
+    }
+    .game-item__img {
+        height: 250px;
+    }
 }
 
 @media (max-width: 500px) {
