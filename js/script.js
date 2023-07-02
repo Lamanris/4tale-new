@@ -32,22 +32,16 @@ const heroSwiper = new Swiper('.hero-swiper', {
 });
 
 // Nav Menu Dropdowns
-$('.menu-item--toggle').click(function (event) {
-    const dropdown = $(this).parent()
-    if (dropdown.hasClass('menu-item--dropdown--active')) {
-        dropdown.removeClass('menu-item--dropdown--active')
+$('.menu-item--dropdown').hover(function () {
+    $(this).toggleClass('menu-item--dropdown--animated')
+    if ($(this).hasClass('menu-item--dropdown--animated')) {
+        $(this).addClass('menu-item--dropdown--active')
     } else {
-        $('.menu-item--dropdown').removeClass('menu-item--dropdown--active')
-        dropdown.addClass('menu-item--dropdown--active')
+        setTimeout(() => {
+            $(this).removeClass('menu-item--dropdown--active')
+        },100)
     }
-
-    event.stopPropagation()
 })
-$(document).on("click", function(e) {
-    if ($(e.target).is(".menu-item--panel") === false) {
-        $('.menu-item--dropdown').removeClass('menu-item--dropdown--active')
-    }
-});
 
 // Show Vacancy Apply Form
 $('.vacancy-btn-apply').click(function () {

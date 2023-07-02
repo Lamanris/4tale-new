@@ -10,8 +10,8 @@
         margin-bottom: 50px;
     }
 
-    .menu-item--panel {
-        top: 42px;
+    .menu-item--panel__content {
+        margin-top: 42px;
     }
 
     .header-container {

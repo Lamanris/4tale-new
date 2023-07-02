@@ -238,15 +238,14 @@ pre {
     width: 16px;
     height: 16px;
 }
-.menu-item--dropdown-lang {
-
-}
 .menu-item--dropdown-lang svg:first-of-type {
     margin-right: 4px;
 }
 .menu-item--dropdown-lang .menu-item--panel {
-    padding: 12px 20px 12px;
     left: 0;
+}
+.menu-item--dropdown-lang .menu-item--panel__content {
+    padding: 12px 20px 12px;
 }
 .menu-item--toggle {
     -webkit-user-select: none;
@@ -258,6 +257,8 @@ pre {
     transition: color .3s;
     display: flex;
     align-items: center;
+    position: relative;
+    z-index: 1;
 }
 .menu-item--toggle:hover {
     color: var(--color-gold);
@@ -271,16 +272,23 @@ pre {
 }
 .menu-item--panel {
     position: absolute;
-    display: none;
+    top: 0;
+    left: -12px;
+    transition: transform 300ms cubic-bezier(0.4, 0, 0.2, 1) 0s, opacity 300ms cubic-bezier(0.4, 0, 0.2, 1) 0s;
+    transform: translateY(15px);
+    visibility: hidden;
+    opacity: 0;
+}
+.menu-item--panel__content {
+    display: flex;
     flex-direction: column;
     align-items: flex-start;
     padding: 12px 55px 12px 12px;
     background: var(--color-dark);
     z-index: 5;
     border-radius: 4px;
-    top: 54px;
-    left: -12px;
     box-shadow:  0 0 5px #282828;
+    margin-top: 54px;
 }
 .menu-item--panel-item {
     color: #FFF;
@@ -291,11 +299,15 @@ pre {
 .menu-item--panel-item:not(:last-child) {
     margin-bottom: 8px;
 }
-.menu-item--dropdown--active .menu-item--toggle svg {
+.menu-item--dropdown--animated .menu-item--toggle svg {
     transform: rotate(180deg);
 }
+.menu-item--dropdown--animated .menu-item--panel {
+    opacity: 1;
+    transform: translateY(0);
+}
 .menu-item--dropdown--active .menu-item--panel {
-    display: flex;
+    visibility: visible;
 }
 
 
@@ -334,6 +346,7 @@ pre {
 .header-menu__item {
     color: #FFF;
     font-family: var(--second-font);
+    position: relative;
 }
 .header-menu__item--active {
     color: var(--color-gold);
@@ -407,11 +420,10 @@ pre {
     padding: 62px 20px 30px;
 }
 .hero-slider__slide-title {
-
     max-width: 674px;
     width: 100%;
     display: flex;
-    align-items: center;
+    align-items: flex-end;
     justify-content: space-between;
 }
 .hero-slider__slide-title__link {
@@ -477,6 +489,7 @@ pre {
     height: 40px;
     z-index: 1;
     position: relative;
+    margin-bottom: 6px;
 }
 .hero-swiper-button svg {
     transition: stroke .3s, fill .3s;
@@ -715,8 +728,8 @@ pre {
 .footer-menu__item:not(:last-child) {
     margin-right: 92px;
 }
-.footer-menu__item--dropdown .menu-item--panel {
-    top: 30px;
+.footer-menu__item--dropdown .menu-item--panel__content {
+    margin-top: 30px;
 }
 .footer-bottom {
     text-align: center;
