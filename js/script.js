@@ -1,4 +1,9 @@
-// Burger Menu
+// Preloader
+window.addEventListener('DOMContentLoaded', () => {
+    const preloader = document.querySelector('#preloader')
+    preloader.classList.add('preloader__none')
+})
+
 // Header Burger
 const headerBurger = document.querySelector('.header__burger')
 const headerBurgerLink = document.querySelectorAll('.header-burger__link')
@@ -62,3 +67,25 @@ $('.vacancy-btn-apply').click(function () {
         },100)
     },300)
 })
+
+
+// Message
+console.log('\n\
+⎜		               ####\n\
+⎜		          #########\n\
+⎜		       %###########\n\
+⎜		    ######     %###\n\
+⎜		  ######       %###\n\
+⎜		 #####         %###\n\
+⎜		#####          %###\n\
+⎜	   ###############@%####@&#########%%%%\n\
+⎜	   ###############@%####@&#######%%%%%%\n\
+⎜		               %###          %%%%%\n\
+⎜		               %###         %%%%%\n\
+⎜		               %#%%       %%%%%&\n\
+⎜		               %#%%     %%%%%%        Like playing with technology?\n\
+⎜		               %%%%%%%%%%%            https://4taleproduction.com/vacancies\n\
+⎜		               %%%%%%%%%\n\
+⎜		               %%%%\n\
+                       ');
+console.log('Proudly developed by https://github.com/Lamanris')
