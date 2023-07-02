@@ -42,6 +42,14 @@ $('.menu-item--dropdown').hover(function () {
         },100)
     }
 })
+$(document).on("click", function(e) {
+    if ($(e.target).is(".menu-item--toggle") === false && $(e.target).is(".menu-item--panel__content") === false && $(e.target).is(".menu-item--panel-item") === false) {
+        $('.menu-item--dropdown').removeClass('menu-item--dropdown--animated')
+        setTimeout(() => {
+            $('.menu-item--dropdown').removeClass('menu-item--dropdown--active')
+        },100)
+    }
+});
 
 // Show Vacancy Apply Form
 $('.vacancy-btn-apply').click(function () {
