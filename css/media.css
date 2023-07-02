@@ -573,6 +573,12 @@
         min-height: 500px;
         position: relative;
     }
+    .hero--game-everwayne {
+        background-position: 65%!important;
+    }
+    .hero--game-warcos {
+        background-position: bottom left!important;
+    }
     .hero-slider__slide {
         max-height: 500px;
         min-height: 500px;
