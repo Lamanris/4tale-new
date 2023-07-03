@@ -20,7 +20,7 @@ if (headerBurger) {
 }
 
 // Hero Slider
-const heroSwiper = new Swiper('.hero-swiper', {
+const heroSlider = new Swiper('.hero-swiper', {
     loop: true,
     navigation: {
         nextEl: '.hero-swiper-button-next',
@@ -29,6 +29,23 @@ const heroSwiper = new Swiper('.hero-swiper', {
     effect: "fade",
     speed: 500,
     allowTouchMove: false,
+    autoplay: {
+        delay: 3500,
+        disableOnInteraction: false,
+        pauseOnMouseEnter: true
+    },
+});
+
+// Contacts Slider
+const contactsSlider = new Swiper('.contacts-swiper', {
+    loop: true,
+    navigation: {
+        nextEl: '.contacts-slider-button-next',
+        prevEl: '.contacts-slider-button-prev',
+    },
+    effect: "fade",
+    speed: 500,
+    grabCursor: true,
     autoplay: {
         delay: 3500,
         disableOnInteraction: false,
