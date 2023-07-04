@@ -730,6 +730,7 @@ pre {
     transition: background-position .3s ease-out, -webkit-transform .4s ease-out;
     transition: background-position .3s ease-out, transform .4s ease-out;
     transition: background-position .3s ease-out, transform .4s ease-out, -webkit-transform .4s ease-out;
+    margin: 0 auto;
 }
 .hero-slider__slide-title__link:hover {
     background-position:0;
